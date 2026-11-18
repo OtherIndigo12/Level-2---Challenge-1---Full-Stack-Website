@@ -43,6 +43,7 @@ const foodForm = document.getElementById("food-form");
 const newFoodInput = document.getElementById("food-input");
 const foodOutput = document.getElementById("food-output");
 
+//Say Hello
 const nameFetch = async (helloName) => {
     const response = await fetch(`${url}hello/sayhello/${helloName}`);
 
@@ -53,6 +54,7 @@ const nameFetch = async (helloName) => {
     return data;
 }
 
+//Adding Numbers
 const additionFetch = async (numberOne, numberTwo) => {
     const response = await fetch(`${url}add/addition/${numberOne}/${numberTwo}`);
 
@@ -62,6 +64,7 @@ const additionFetch = async (numberOne, numberTwo) => {
     return data;
 }
 
+//Comparing Numbers
 const compareFetch = async (otherNumberOne, otherNumberTwo) => {
     const response = await fetch(`${url}compare/compare/${otherNumberOne}/${otherNumberTwo}`);
 
@@ -72,7 +75,7 @@ const compareFetch = async (otherNumberOne, otherNumberTwo) => {
     return data
 }
 
-
+//Magic 8 Ball
 const ballFetch = async (question) => {
     const response = await fetch(`${url}ball/ball/${question}`);
 
@@ -81,7 +84,7 @@ const ballFetch = async (question) => {
     return data;
 }
 
-
+//Mad-Lib
 const madlibFetch = async (mlName, mlLocation, mlColor, mlEvent, mlNumber, mlLetter, mlFriend, mlEat, mlFood, mlDessert) => {
     const response = await fetch(`${url}ml/madlib/${mlName}/${mlLocation}/${mlColor}/${mlEvent}/${mlNumber}/${mlLetter}/${mlFriend}/${mlEat}/${mlFood}/${mlDessert}`);
 
@@ -102,7 +105,7 @@ const foodFetch = async (choice) => {
     return data;
 }
 
-
+//Say Hello
 if (nameForm) {
     nameForm.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -113,6 +116,7 @@ if (nameForm) {
     })
 }
 
+//Adding Numbers
 if (addForm) {
     addForm.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -123,6 +127,7 @@ if (addForm) {
     })
 }
 
+//Comparing Numbers
 if (compareForm) {
     compareForm.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -133,7 +138,7 @@ if (compareForm) {
     })
 }
 
-
+//Magic 8 Ball
 if (ballForm) {
     ballForm.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -144,6 +149,7 @@ if (ballForm) {
     })
 }
 
+//Mad-Lib
 if (mlForm) {
     mlForm.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -164,6 +170,7 @@ if (mlForm) {
     })
 }
 
+//Restaurants
 if (foodForm) {
     foodForm.addEventListener("submit", async (event) => {
         event.preventDefault();
