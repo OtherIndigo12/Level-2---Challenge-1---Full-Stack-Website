@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball - Full Stack Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-violet-900 border-white border-4 min-h-screen">
+    <header>
+        <h1 class="font-bold font-inter text-center mt-10 md:text-4xl sm:text-2xl text-white">Full Stack Website</h1>
+        <nav class="flex flex-wrap justify-center items-center gap-4 md:gap-6 p-6 md:p-4 text-white md:text-xl sm:text-sm border w-fit mx-auto rounded-xl bg-fuchsia-600 mt-10 max-w-[90%]">
+            <a href="./index.html" >Home</a>
+            <a href="./hello.html">Say Hello!</a>
+            <a href="./add.html">Add 2 Numbers</a>
+            <a href="./greaterthan.html">Comparing</a>
+            <a href="./8ball.html">8 Ball</a>
+            <a href="./madlib.html">Mad-Lib</a>
+            <a href="./restaurant.html">Restaurants</a>
+        </nav>
+    </header>
+    <main>
+        <section class="mt-5 flex flex-col justify-center items-center">
+            <h1 class="text-center font-inter font-bold text-white mb-5 text-2xl">Magic 8 Ball!</h1>
+            <h2 class="text-center text-white mt-10 font-bold font-inter">Enter Your Question Here!</h2>
+            <form id="ball-form" class="block mx-auto flex justify-center items-center mt-5 ">
+                <input id="question-input" type="text" placeholder="Enter Text Here..." class="bg-white text-gray-500 p-1 mr-5">
+                <button type="submit" class="text-white p-2 bg-lime-500">Submit</button>
+            </form>
+
+            <p id="ball-output" class="text-white font-bold p-2"></p>
+        </section>
+        
+       
+    </main>
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>

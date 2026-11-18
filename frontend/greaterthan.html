@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Two Numbers - Full Stack Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-violet-900">
+    <header>
+        <h1 class="font-bold font-inter text-center mt-10 md:text-4xl sm:text-2xl text-white">Full Stack Website</h1>
+        <nav class="flex flex-wrap justify-center items-center gap-4 md:gap-6 p-6 md:p-4 text-white md:text-xl sm:text-sm border w-fit mx-auto rounded-xl bg-fuchsia-600 mt-10 max-w-[90%]">
+            <a href="./index.html" >Home</a>
+            <a href="./hello.html">Say Hello!</a>
+            <a href="./add.html">Add 2 Numbers</a>
+            <a href="./greaterthan.html">Comparing</a>
+            <a href="./8ball.html">8 Ball</a>
+            <a href="./madlib.html">Mad-Lib</a>
+            <a href="./restaurant.html">Restaurants</a>
+        </nav>
+    </header>
+    <main>
+        <section class="mt-5 flex flex-col justify-center items-center">
+            <h1 class="text-center font-inter font-bold text-white mb-5 text-2xl">Compare Numbers!</h1>
+            <h2 class="text-center font-inter font-bold text-white mb-5">Enter Both Numbers Here!</h2>
+            <form id="compare-form">
+                <input type="number" id="other-number-one" placeholder="enter first number" class="bg-white text-gray-500 p-1" required>
+                <span class=" font-bold text-white p-1">and</span>
+                <input type="number" id="other-number-two" placeholder="enter second number" class="bg-white text-gray-500 p-1" required>
+                <button class="text-white bg-lime-500 p-2 rounded-xl">Compare!</button>
+            </form>
+
+            <p id="compare-output" class="text-white font-bold p-2"></p>
+            <p id="compare-output2" class="text-white font-bold p-2"></p>
+        </section>
+    </main>
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>
